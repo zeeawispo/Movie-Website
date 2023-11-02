@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.show-card {
+    width: 200px;
+    height: 200px; /* Set a fixed height for the show card */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Hide overflow content if any */
+}
+
+.show-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.show-card .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Set image container height to 100% */
+    overflow: hidden;
+}
+
+.show-card .image-container img.show-image {
+    width: 100%; /* Set image width to 100% of parent container */
+    height: 100%; /* Set image height to 100% of parent container */
+    object-fit: cover;
+}
